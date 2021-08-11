@@ -2,8 +2,10 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    // MARK: - PROPERTY
     @Environment(\.managedObjectContext) private var viewContext
 
+    // FETCHING DATA
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
@@ -33,6 +35,7 @@ struct ContentView: View {
         }
     }
     
+    // MARK: - FUNCTION
     private func addItem() {
         withAnimation {
             let newItem = Item(context: viewContext)
@@ -60,13 +63,6 @@ struct ContentView: View {
         }
     }
 }
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

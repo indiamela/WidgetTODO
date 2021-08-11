@@ -16,6 +16,7 @@
 		F20F191E26C489FC003B37E0 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F20F191B26C489FC003B37E0 /* sound-rise.mp3 */; };
 		F20F191F26C489FC003B37E0 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F20F191C26C489FC003B37E0 /* sound-tap.mp3 */; };
 		F20F192026C489FC003B37E0 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F20F191D26C489FC003B37E0 /* sound-ding.mp3 */; };
+		F20F192C26C495B2003B37E0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20F192B26C495B2003B37E0 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F20F191B26C489FC003B37E0 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		F20F191C26C489FC003B37E0 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
 		F20F191D26C489FC003B37E0 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
+		F20F192B26C495B2003B37E0 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		F20F190626C4892A003B37E0 /* WidgetTodo */ = {
 			isa = PBXGroup;
 			children = (
+				F20F190726C4892A003B37E0 /* WidgetTodoApp.swift */,
 				F20F190B26C4892C003B37E0 /* Assets.xcassets */,
 				F20F192426C48A54003B37E0 /* Extension */,
 				F20F191526C4892C003B37E0 /* Info.plist */,
@@ -103,6 +106,7 @@
 		F20F192326C48A3D003B37E0 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				F20F192B26C495B2003B37E0 /* Constant.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -117,7 +121,6 @@
 		F20F192526C48A62003B37E0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F20F190726C4892A003B37E0 /* WidgetTodoApp.swift */,
 				F20F190926C4892A003B37E0 /* ContentView.swift */,
 			);
 			path = View;
@@ -206,6 +209,7 @@
 			files = (
 				F20F191126C4892C003B37E0 /* Persistence.swift in Sources */,
 				F20F191426C4892C003B37E0 /* WidgetTodo.xcdatamodeld in Sources */,
+				F20F192C26C495B2003B37E0 /* Constant.swift in Sources */,
 				F20F190A26C4892A003B37E0 /* ContentView.swift in Sources */,
 				F20F190826C4892A003B37E0 /* WidgetTodoApp.swift in Sources */,
 			);
